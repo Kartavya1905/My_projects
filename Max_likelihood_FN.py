@@ -1,5 +1,5 @@
 import numpy
-
+# Data points given by gaussian distribution
 data = [5.57271192, 1.64256038, 6.52488012, 6.42992423, 4.79144545, 5.71202259, 5.15884511, 1.97660446, 
         3.75169749, 6.35724051, 5.50531088, 2.79542725, 6.97076015, 3.74836875, 3.51092523, 3.31459714, 
         4.13776735, 10.26178198, 6.12737198, 9.05212724, 5.33886248, 5.71549245, 3.42868849, 7.13124501, 
@@ -14,8 +14,13 @@ data = [5.57271192, 1.64256038, 6.52488012, 6.42992423, 4.79144545, 5.71202259, 
         6.52862985, 5.89228770, 4.85484611, 7.26507203, 7.73039081, 5.99961644, 9.08446372, 6.93907020, 
         8.15736518, 6.12935602, 5.84192174, 4.00507773]
 
-mean =numpy.mean(data)
-variance = numpy.mean((data-mean)**2)
+# Calculating mean for the maximum likelihood gaussian distribution data points
+ml_mean =numpy.mean(data)
 
-print(mean)
-print(variance)
+# Calculating variance for the maximum likelihood gaussian distribution data points
+ml_variance = numpy.mean((data-ml_mean)**2)
+
+# Printing the mean and variance for the maximum likelihood gaussian distribution data points
+print("Maximum likelihood solution for mean from data points: ", ml_mean)
+
+print("Maximum likelihood solution for variance from data points: ", ml_variance)
