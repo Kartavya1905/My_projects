@@ -22,6 +22,6 @@ ml_mean =numpy.mean(data)
 ml_variance = numpy.mean((data-ml_mean)**2)
 
 # Printing the mean and variance for the maximum likelihood gaussian distribution data points
-print("Maximum likelihood solution for mean from data points: ", ml_mean)
+print(f"Maximum likelihood solution for mean from data points:  {ml_mean:.6f}")
 
-print("Maximum likelihood solution for variance from data points: ", ml_variance)
+print(f"Maximum likelihood solution for variance from data points: {ml_variance:.6f}")
