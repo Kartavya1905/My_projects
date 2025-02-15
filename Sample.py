@@ -1,5 +1,9 @@
+# q1
+
 # values = {float(9.0),int(9)} # set values as {("float",9.0),("int",9)} or {"9",9.0} or {9,"9.0"}
 # print(values)
+
+# q2
 
 # n = int(input("Enter a number: "))
 # i=1
@@ -8,6 +12,8 @@
 #     sum=sum+i
 #     i+=1
 # print(sum)
+
+# q3
 
 n = int(input("Enter a number: "))
 m=1
