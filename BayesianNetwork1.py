@@ -1,10 +1,11 @@
 # Project 1 Solution 
 # Name: Kartavya Mandora
 
+#1. import libraries
 from pgmpy.models import DiscreteBayesianNetwork
 from pgmpy.factors.discrete import TabularCPD
 from pgmpy.inference import VariableElimination
-
+#2. Create a Bayesian Network
 # Define the structure of the Bayesian Network
 model = DiscreteBayesianNetwork([
     ("travel", "disease"),
@@ -13,7 +14,7 @@ model = DiscreteBayesianNetwork([
     ("disease", "fever"),
     ("disease", "lab_test")
 ])
-
+#3. Define the Conditional Probability Distributions (CPDs)
 # Define the Conditional Probability Distributions (CPDs)
 
 cpd_travel = TabularCPD(variable="travel",
