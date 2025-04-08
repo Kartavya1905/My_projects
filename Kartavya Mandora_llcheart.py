@@ -9,7 +9,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score
 
 # Load the dataset from your hard drive 
-dataset = "heart.csv"
+dataset = r"C:\Users\Lenovo\Downloads\Gitdemo\My_projects\heart.csv"
 df = pd.read_csv(dataset)
 
 # Print the first few rows of the dataset 
