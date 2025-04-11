@@ -1,4 +1,4 @@
-# Project 2 SOlution
+# Project 2 Solution
 # Name: Kartavya Mandora
  
 # Import lib  
@@ -46,7 +46,7 @@ def tanh_derivative(z):
 def softmax(z):
     exp_z = np.exp(z - np.max(z, axis=1, keepdims=True))
     return exp_z / np.sum(exp_z, axis=1, keepdims=True)
-
+# Implementing Cross-Entropy Loss function
 def cross_entropy(y_true, y_pred):
     return -np.sum(y_true * np.log(y_pred + 1e-9)) / y_true.shape[0]
 # Initialize neural network parameters
@@ -128,7 +128,7 @@ y_true = np.argmax(y_test, axis=1)
 accuracy = np.mean(y_pred == y_true)
 print(f"Test Accuracy: {accuracy * 100:.2f}%")
 
-# Plot cost function convergence history 
+# Plot the cost function convergence history 
 plt.plot(loss_history)
 plt.title("Loss over iterations")
 plt.xlabel("i")
