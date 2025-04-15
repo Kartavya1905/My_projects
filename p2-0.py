@@ -1,5 +1,6 @@
 # Project 2 Solution
 # Name: Kartavya Mandora
+
 # Import some lib 
 import random
 import pandas as pd
