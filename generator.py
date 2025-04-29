@@ -3,7 +3,7 @@ import sys
 
 # Read text from file
 if len(sys.argv) != 2:
-    sys.exit("Usage: python generator.py league.txt")
+    sys.exit("Usage: python generator.py engineer.txt")
 with open(sys.argv[1]) as f:
     text = f.read()
 
